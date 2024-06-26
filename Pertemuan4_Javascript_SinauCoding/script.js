@@ -2,7 +2,7 @@ var totalBus = 10;
 var busOperations = 6;
 var busNumber = 1;
 
-for (busNumber; busNumber <= 10; busNumber++) {
+for (busNumber; busNumber <= totalBus; busNumber++) {
     let status;
     if (busNumber <= busOperations) {
       status = "beroperasi dengan baik";
