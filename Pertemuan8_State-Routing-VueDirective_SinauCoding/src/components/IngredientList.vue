@@ -61,7 +61,7 @@
   <script setup>
   import { ref, computed } from 'vue'
   import { useIngredientStore } from '../stores/ingredientStore'
-  import '../style.css' // Import the CSS file
+  import '../style.css'
   
   const store = useIngredientStore()
   
@@ -97,7 +97,6 @@
       return
     }
     store.setCustomer(customer.value)
-    // Implement print functionality here
   }
   </script>
   
