@@ -1,0 +1,103 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  background-color: #1c1c1c;
+  font-family: Arial, sans-serif;
+}
+
+
+.ingredient-list {
+  background-color: #1c1c1c;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 1000px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin: 0 5px;
+}
+
+.input-group label {
+  margin-right: 10px;
+  width: 70px;
+  text-align: right;
+}
+
+input[type="text"],
+input[type="number"] {
+  background-color: #333;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  border-style: ridge;
+  border-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+table thead {
+  background-color: #444;
+}
+
+p {
+  text-align: center;
+}
+
+.print-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.print-button button {
+  padding: 10px 20px;
+}
