@@ -56,11 +56,12 @@
         <button @click="printInvoice">Cetak Tagihan</button>
       </div>
     </div>
-  </template>
+</template>
   
-  <script setup>
+<script setup>
   import { ref, computed } from 'vue'
   import { useIngredientStore } from '../stores/ingredientStore'
+  import { useRouter } from 'vue-router';
   import '../style.css'
   
   const store = useIngredientStore()
@@ -74,6 +75,8 @@
   const totalAmount = computed(() => ingredients.value.reduce((sum, item) => sum + item.amount, 0))
   const totalPrice = computed(() => ingredients.value.reduce((sum, item) => sum + item.price * item.amount, 0))
   
+  const router = useRouter();
+
   function addIngredient() {
     if (ingredient.value && amount.value && price.value) {
       store.addIngredient({
@@ -92,11 +95,22 @@
   }
   
   function printInvoice() {
-    if (!customer.value) {
-      alert('Please fill in the customer name')
-      return
-    }
-    store.setCustomer(customer.value)
+  if (!customer.value) {
+    alert('Please field in customer name');
+    return;
   }
-  </script>
+  store.setCustomer(customer.value);
+  store.setTotalAmount(totalAmount.value);
+  store.setTotalPrice(totalPrice.value);
+
+  console.log('Payment:', {
+    customer: customer.value,
+    totalAmount: totalAmount.value,
+    totalPrice: totalPrice.value,
+  });
+
+  router.push({ name: 'Payment' });
+  
+}
+</script>
   
