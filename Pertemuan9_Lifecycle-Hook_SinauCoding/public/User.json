@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "nama": "Fauzan",
+        "position": "Leader",
+        "no_telp": "087126272716",
+        "email": "fauzan@sinau.com"
+    },
+    {
+        "id": 2,
+        "nama": "Albar",
+        "position": "Vice Leader",
+        "no_telp": "087126272716",
+        "email": "albar@sinau.com"
+    },
+    {
+        "id": 3,
+        "nama": "Bicky",
+        "position": "Staff",
+        "no_telp": "087182832896",
+        "email": "bicky@sinau.com"
+    },
+    {
+        "id": 4,
+        "nama": "Desi",
+        "position": "Staff",
+        "no_telp": "087182892839",
+        "email": "desi@sinau.com"
+    },
+    {
+        "id": 5,
+        "nama": "Anggi",
+        "position": "Staff",
+        "no_telp": "087182838237",
+        "email": "anggi@sinau.com"
+    },
+    {
+        "id": 6,
+        "nama": "Tommy",
+        "position": "Staff",
+        "no_telp": "087182881238",
+        "email": "tommy@sinau.com"
+    }
+]
