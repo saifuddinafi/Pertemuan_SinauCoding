@@ -1,0 +1,42 @@
+[
+    {
+      "title": "HP Laptop",
+      "id": 1
+    },
+    {
+      "title": "Iphone X",
+      "id": 2
+    },
+    {
+      "title": "Travelling Bag",
+      "id": 3
+    },
+    {
+      "title": "Nike Shoes",
+      "id": 4
+    },
+    {
+      "title": "Leather Belts",
+      "id": 5
+    },
+    {
+      "title": "Mechanical Keyboard",
+      "id": 6
+    },
+    {
+      "title": "Water Gun",
+      "id": 7
+    },
+    {
+      "title": "Earth Globe",
+      "id": 8
+    },
+    {
+      "title": "Javascript book",
+      "id": 9
+    },
+    {
+      "title": "Black T-shirt",
+      "id": 10
+    }
+]
