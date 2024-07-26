@@ -1,126 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@100;200;300;400;500;600;700;800;900&family=Dangrek&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./main.css">
-    <title>Second Nature</title>
+    <title>Saifuddin - Portfolio</title>
+    <meta name="description" content="Personal portfolio of Saifuddin, Front End Developer">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
+
 <body>
-    <nav>
-        <p class="text-logo">Second Nature</p>
-        <div class="nav-right">
-            <a href="#hero">Home</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Saifuddin</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Experiences">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <section id="hero">
-        <div id="hero-left">
-            <h1 class="hero-title">Best Food For Your Taste</h1>
-            
-            <div class="cta-container">
-                <button class="cta-btn btn-green">Order Now</button>
-                <button class="cta-btn btn-gray">Contact Us</button>
-            </div>
-        </div>
-        <div id="hero-right">
-            <img src="./assets/images/main.png" alt="main food">
-        </div>
-    </section>
-    <section id="about">
-        <div class="about-title-box">
-            <h2 class="about-title">Extraordinary Taste and Experience</h2>
-        </div>
-        <div class="card-about">
-            <div class="about-box">
-                <h2 style="margin-bottom: 20px">We Make Sure Your Food Arrive on Time</h2>
-                <p>
-                    At our food delivery service, punctuality is our promise. We ensure your food arrives hot and fresh, right on time, every time. Trust us to deliver your meals promptly, so you can enjoy your favorite dishes without any delay. We make sure your food arrives on time, guaranteed.
-                </p>
-                <button class="btn-about btn-green" style="margin-top: 20px">Read More</button>
-            </div>
-            <div class="about-img-box">
-                <img class="about-img" src="./assets/images/delivery.jpeg" alt="delivery food">
-            </div>
-        </div>
-        <div class="card-about about-right">
-            <div class="about-box">
-                <h2 style="margin-bottom: 20px">High Quality Food Material</h2>
-                <p>
-                    At our kitchen, we prioritize using only high-quality food materials. From farm-fresh vegetables to premium meats, every ingredient is carefully selected to ensure exceptional taste and nutrition. Our commitment to quality means you get the best in every bite, ensuring delicious and wholesome meals every time.
-                </p>
-                <button class="btn-about btn-green" style="margin-top: 20px">Read More</button>
-            </div>
-            <div class="about-img-box">
-                <img class="about-img" src="./assets/images/cooking.webp" alt="cooking">
-            </div>
-        </div>
-        <div class="card-about">
-            <div class="about-box">
-                <h2 style="margin-bottom: 20px">Customize Your Own Bowl</h2>
-                <p>
-                    Create your perfect meal with our "Customize Your Own Bowl" option. Choose from a variety of fresh ingredients, including vibrant veggies, premium proteins, and delicious toppings. Tailor your bowl to your taste and dietary needs, ensuring a nutritious and satisfying meal every time. Personalize your bowl today for a unique dining experience.
-                </p>
-                <button class="btn-about btn-green" style="margin-top: 20px">Read More</button>
-            </div>
-            <div class="about-img-box">
-                <img class="about-img" src="./assets/images/healthy food.jpeg" alt="health food">
-            </div>
-        </div>
-    </section>
-    <section id="signature-menu">
-        <div class="signature-title-box">
-            <h2 class="signature-title">Our Signature Menu</h2>
-        </div>
-        <div class="signature-container">
-            <div class="card-menu">
-                <div class="img-menu">
-                    <img src="./assets/images/menu_1.png" alt="menu 1">
+
+    <!-- Header -->
+    <header class="py-5 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="./assets/images/Pas Foto.jpg" alt="Saifuddin" class="img-fluid rounded-circle">
                 </div>
-                <div class="menu-info">
-                    <h4>Salmon Salad with Mix Veggies</h4>
-                    <p>Salmon Salad with Mixed Veggies is a light and refreshing dish, ideal for a healthy lunch or dinner. This salad features perfectly cooked salmon, which is either grilled, baked, or pan-seared, and served over a bed of mixed vegetables. The salmon is seasoned with salt, pepper, and a hint of lemon to enhance its natural flavors.</p>
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="lead">Hello, I'm</p>
+                    <h1 class="display-4 fw-bold">Saifuddin</h1>
+                    <h2 class="h3 mb-4">Front End Developer</h2>
+                    <div class="d-flex justify-content-center justify-content-md-start gap-3 mb-4">
+                        <a href="" class="btn btn-primary" download>Download CV</a>
+                        <a href="#Contact" class="btn btn-outline-primary">Contact Info</a>
+                    </div>
+                    <div class="d-flex justify-content-center justify-content-md-start gap-3">
+                        <a href="https://www.linkedin.com/in/saifuddin-iqyanul-afi-a72882175/" class="text-dark"><i class="fab fa-linkedin fa-2x"></i></a>
+                        <a href="https://github.com/saifuddinafi/" class="text-dark"><i class="fab fa-github fa-2x"></i></a>
+                    </div>
                 </div>
             </div>
-            <div class="card-menu">
-                <div class="img-menu">
-                    <img src="./assets/images/menu_2.webp" alt="menu 1">
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="About" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <img src="./assets/images/Pas Foto.jpg" alt="Saifuddin" class="img-fluid rounded">
                 </div>
-                <div class="menu-info">
-                    <h4>Fried Salmon with Brocolli</h4>
-                    <p>Fried Salmon with Broccoli is a delicious and nutritious dish, perfect for lunch or dinner. This meal is prepared with salmon fillets seasoned with salt, pepper, and your choice of herbs such as dill, parsley, or thyme. The salmon is then fried in a pan with olive oil or butter until the skin is crispy and the flesh is perfectly cooked, usually requiring about 4-5 minutes on each side.</p>
-                </div>
-            </div>
-            <div class="card-menu">
-                <div class="img-menu">
-                    <img src="./assets/images/menu_3.webp" alt="menu 1">
-                </div>
-                <div class="menu-info">
-                    <h4>Salmon with BBQ Sauce</h4>
-                    <p>Salmon with BBQ Sauce is a flavorful and satisfying dish, perfect for a hearty meal. This dish features salmon fillets that are generously coated with a tangy and sweet BBQ sauce, then grilled or baked to perfection.</p>
+                <div class="col-md-8">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <i class="fas fa-graduation-cap fa-3x mb-3"></i>
+                            <h4 class="card-title">Education</h4>
+                            <p class="card-text">Bachelors Degree<br>Electrical Engineering</p>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eius minus magnam perspiciatis doloribus accusamus labore voluptatibus sapiente explicabo. Nam iure nobis quis amet nulla deserunt sint eveniet, sit accusantium optio ex quaerat facilis neque labore magni asperiores animi cupiditate numquam unde iste officiis. Expedita pariatur illo nemo dolores. Veritatis?</p>
                 </div>
             </div>
         </div>
     </section>
-    <section id="contact">
-        <form class="form">
-            <div class="form-info">
-                <h3>Subscribe to Our Promo</h3>
-                
+
+    <!-- Experience Section -->
+    <section id="Experiences" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Experience</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title text-center mb-4">Front End Development</h3>
+                            <div class="row">
+                                <div class="col-6 mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-check-circle text-success me-2"></i>
+                                        <div>
+                                            <h5 class="mb-0">HTML</h5>
+                                            <small>Experienced</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-check-circle text-success me-2"></i>
+                                        <div>
+                                            <h5 class="mb-0">CSS</h5>
+                                            <small>Experienced</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-check-circle text-success me-2"></i>
+                                        <div>
+                                            <h5 class="mb-0">JavaScript</h5>
+                                            <small>Basic</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-check-circle text-success me-2"></i>
+                                        <div>
+                                            <h5 class="mb-0">Vue.js</h5>
+                                            <small>Intermediate</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-check-circle text-success me-2"></i>
+                                        <div>
+                                            <h5 class="mb-0">React.js</h5>
+                                            <small>Intermediate</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title text-center mb-4">Back End Development</h3>
+                            <div class="row">
+                                <div class="col-6 mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-check-circle text-success me-2"></i>
+                                        <div>
+                                            <h5 class="mb-0">MySQL</h5>
+                                            <small>Basic</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-check-circle text-success me-2"></i>
+                                        <div>
+                                            <h5 class="mb-0">Node.js</h5>
+                                            <small>Basic</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-check-circle text-success me-2"></i>
+                                        <div>
+                                            <h5 class="mb-0">Express.js</h5>
+                                            <small>Basic</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-check-circle text-success me-2"></i>
+                                        <div>
+                                            <h5 class="mb-0">Git</h5>
+                                            <small>Intermediate</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="input-box">
-                <input type="email" name="email" id="email" placeholder="input your email">
-                <input type="submit" value="Discover Here" class="btn-gray" style="color:white">
-            </div>
-        </form>
+        </div>
     </section>
-    <footer>
-        <h5>&copy; <em id="date"></em>2024 Second Nature</h5>
+
+    <!-- Projects Section -->
+    <section id="Projects" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Projects</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./assets/images/healthy food.jpeg" class="card-img-top" alt="Project 1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Project 1</h5>
+                            <a href="./index.html" class="btn btn-primary">Live Demo</a>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="Contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-around">
+                                <a href="mailto:example@gmail.com" class="text-dark text-decoration-none">
+                                    <i class="fas fa-envelope fa-2x mb-2"></i>
+                                    <h5>afi.saifudin7@gmail.com</h5>
+                                </a>
+                                <a href="https://www.linkedin.com/in/saifuddin-iqyanul-afi-a72882175/" class="text-dark text-decoration-none">
+                                    <i class="fab fa-linkedin fa-2x mb-2"></i>
+                                    <h5>LinkedIn</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light py-4">
+        <div class="container text-center">
+            <ul class="nav justify-content-center mb-3">
+                <li class="nav-item"><a href="#About" class="nav-link text-dark">About</a></li>
+                <li class="nav-item"><a href="#Experiences" class="nav-link text-dark">Experiences</a></li>
+                <li class="nav-item"><a href="#Projects" class="nav-link text-dark">Projects</a></li>
+                <li class="nav-item"><a href="#Contact" class="nav-link text-dark">Contact</a></li>
+            </ul>
+            <p>&copy; 2024 Saifuddin. All rights reserved.</p>
+        </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
